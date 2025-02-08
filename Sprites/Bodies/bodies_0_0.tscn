@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8jyyew8t5uin"]
+
+[ext_resource type="Texture2D" uid="uid://4ax4pndioub2" path="res://Sprites/Bodies/Bodies.tres" id="1_b5go5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_excqo"]
+atlas = ExtResource("1_b5go5")
+region = Rect2(0, 10, 80, 60)
+
+[node name="Bodies-0-0" type="Sprite2D"]
+position = Vector2(137, 119)
+texture = SubResource("AtlasTexture_excqo")

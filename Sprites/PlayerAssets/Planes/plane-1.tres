@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cyrpuh3emfdrv"]
+
+[ext_resource type="Texture2D" uid="uid://17rre2akcqgk" path="res://Sprites/PlayerAssets/Planes/planes.tres" id="1_bpdmp"]
+
+[resource]
+atlas = ExtResource("1_bpdmp")
+region = Rect2(0, 0, 22, 16)

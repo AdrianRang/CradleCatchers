@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://b6x758lhxsauc"]
+
+[ext_resource type="Texture2D" uid="uid://ebvonubofyxe" path="res://Sprites/BabyAssets.png" id="1_yk7wd"]
+
+[resource]
+atlas = ExtResource("1_yk7wd")
+region = Rect2(340, 0, 290, 1280)
+filter_clip = true

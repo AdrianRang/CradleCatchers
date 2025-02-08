@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://71xn4rf5gqme"]
+
+[ext_resource type="Texture2D" uid="uid://b0dg1fsgnl7g0" path="res://Sprites/Skins/Skins.tres" id="1_3k8x0"]
+
+[resource]
+atlas = ExtResource("1_3k8x0")
+region = Rect2(200, 160, 100, 90)

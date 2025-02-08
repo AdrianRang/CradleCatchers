@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bfny15ucrdp82"]
+
+[ext_resource type="Texture2D" uid="uid://b6x758lhxsauc" path="res://Sprites/Hairs/Hairs.tres" id="1_bhd2k"]
+
+[resource]
+atlas = ExtResource("1_bhd2k")
+region = Rect2(190, 240, 100, 80)

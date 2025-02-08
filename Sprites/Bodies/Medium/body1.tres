@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://ios1ssay88va"]
+
+[ext_resource type="Texture2D" uid="uid://4ax4pndioub2" path="res://Sprites/Bodies/Bodies.tres" id="1_nursy"]
+
+[resource]
+atlas = ExtResource("1_nursy")
+region = Rect2(100, 100, 80, 50)

@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce1c2ndr703kv"]
+
+[ext_resource type="Script" path="res://Scripts/GenBaby.cs" id="4_vk6lh"]
+
+[node name="Baby" type="Node2D"]
+texture_filter = 1
+
+[node name="Large" type="Node2D" parent="."]
+script = ExtResource("4_vk6lh")
+hairsPath = "res://Sprites/Hairs/Large/"
+hairOffset = Vector2(0, -25)
+clothesPaths = "res://Sprites/Bodies/Large/"
+clothesOffset = Vector2(0, 10)
+bodiesPath = "res://Sprites/Skins/Large/"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Medium" type="Node2D" parent="."]
+position = Vector2(100, 0)
+script = ExtResource("4_vk6lh")
+hairsPath = "res://Sprites/Hairs/Medium/"
+hairOffset = Vector2(0, -25)
+clothesPaths = "res://Sprites/Bodies/Medium/"
+clothesOffset = Vector2(0, 20)
+bodiesPath = "res://Sprites/Skins/Medium/"
+
+[node name="Small" type="Node2D" parent="."]
+position = Vector2(-100, 0)
+script = ExtResource("4_vk6lh")
+hairsPath = "res://Sprites/Hairs/Small/"
+hairOffset = Vector2(5, -20)
+clothesPaths = "res://Sprites/Bodies/Small/"
+clothesOffset = Vector2(0, 15)
+bodiesPath = "res://Sprites/Skins/Small/"

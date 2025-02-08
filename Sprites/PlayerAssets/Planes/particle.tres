@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://d16vje3a3aygq"]
+
+[ext_resource type="Texture2D" uid="uid://7cxfdvegy0dt" path="res://Scripts/Baby boat sprites.png" id="1_cnkb5"]
+
+[resource]
+atlas = ExtResource("1_cnkb5")
+region = Rect2(150.987, 121.064, 2.57817, 2.24063)

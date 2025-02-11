@@ -17,7 +17,8 @@ public partial class Plane : RigidBody2D
 	{
 		if (Input.IsActionPressed("ui_right"))
 		{
-			Vector2 force = new Vector2(2500, 0);
+			// Vector2 force = new Vector2(2500, 0);
+			Vector2 force = new Vector2(Mathf.Max((Mathf.Cos(Rotation-Mathf.Pi/2)+0.9f)/2f*6000, 0), 0);
 			ApplyCentralForce(force.Rotated(Rotation));
 		}
 		if (Input.IsActionPressed("ui_left"))
@@ -49,12 +50,15 @@ public partial class Plane : RigidBody2D
 		
 		float torque = rotationDifference * 50000; // Adjust the multiplier as needed
 		ApplyTorque(torque);
-		// GD.Print(torque);
 		// Ensure velocity always points forward
 		float speed = Mathf.Sqrt(Mathf.Pow(LinearVelocity.X, 2) + Mathf.Pow(LinearVelocity.Y, 2));
-		LinearVelocity = new Vector2(speed, 0).Rotated(Rotation);
-		// TODO: More 'real' (Makes sure it can go down)
-		// LinearVelocity = new Vector2(speed, 0).Rotated((Rotation*1+LinearVelocity.Angle()*4)/5);
+		// Fix for angle Wrapping;
+		if(Rotation*LinearVelocity.Angle() < 0 && Mathf.Abs(Rotation) > 1){
+			GD.Print("AAA");
+			LinearVelocity = new Vector2(speed, 0).Rotated(LinearVelocity.Angle());
+		} else {
+			LinearVelocity = new Vector2(speed, 0).Rotated((Rotation+LinearVelocity.Angle()*10)/11);
+		}
 	}
 
 	public override void _Input(InputEvent @event)
